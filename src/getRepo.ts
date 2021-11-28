@@ -146,12 +146,14 @@ export const GetGhStarCount = async (repoName: string): Promise<number> => {
     await getGhRepoStatus(repoName)
   ).stargazers_count;
 };
+
 Deno.test("get repo data", async () => {
   const data = await getGhRepoStatus("denoland/deno");
   if (!(data !== null && typeof data === "object")) {
     throw Error("not get data");
   }
 });
+
 Deno.test("get star count", async () => {
   const data = await GetGhStarCount("denoland/deno");
   if (!(data !== null && typeof data === "number")) {
