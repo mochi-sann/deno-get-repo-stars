@@ -1,3 +1,4 @@
+// deno-lint-ignore-file
 export const getGhRepoStatus = async (
   repoName: string
 ): Promise<RootObject> => {
@@ -6,7 +7,6 @@ export const getGhRepoStatus = async (
   const jsonData = await Respons.json();
   return jsonData;
 };
-// deno-lint-ignore-file
 export interface Owner {
   login: string;
   id: number;
