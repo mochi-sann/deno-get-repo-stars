@@ -24,3 +24,9 @@ $ vr
 The scripts are defined in [velociraptor.yml](velociraptor.yml).
 
 [![deploy](https://deno.com/deno-deploy-button.svg)](https://cloudy-owl-71.deno.dev/)
+
+# install on global
+
+```bash
+deno install -qAn gh-repo-stars https://deno.land/x/get_rep_stars/main.ts
+```
